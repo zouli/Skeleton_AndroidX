@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout" />
+
+    <Button
+        android:id="@+id/btn_session_timeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Session timeout" />
+
+    <Button
+        android:id="@+id/btn_get_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get list" />
+</LinearLayout>

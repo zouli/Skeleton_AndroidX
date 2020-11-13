@@ -1,0 +1,11 @@
+apply plugin: 'org.greenrobot.greendao'
+
+dependencies {
+    //数据库
+    implementation 'org.greenrobot:greendao:3.2.2'
+}
+
+//数据库版本
+greendao {
+    schemaVersion 1
+}

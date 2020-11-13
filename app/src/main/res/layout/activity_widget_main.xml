@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date picker" />
+
+            <Button
+                android:id="@+id/btn_checkable_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkable Linearlayout" />
+
+            <Button
+                android:id="@+id/btn_completelistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complete ListView" />
+
+            <Button
+                android:id="@+id/btn_verificationcodeview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VerificationCodeView" />
+
+            <Button
+                android:id="@+id/btn_imagegridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImageGridView" />
+
+            <Button
+                android:id="@+id/btn_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web" />
+
+            <Button
+                android:id="@+id/btn_common_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Common Select" />
+
+            <Button
+                android:id="@+id/btn_refresh_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refresh ListView" />
+
+            <Button
+                android:id="@+id/btn_refresh_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refresh GridView" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

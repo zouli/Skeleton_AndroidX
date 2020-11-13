@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:weightSum">1</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="InputCaptcha" />
+
+    <style name="InputCaptcha.Code">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:inputType">number</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColorHint">#999999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="InputCaptcha.Button">
+        <item name="android:text">@string/button_view_send_verification_code</item>
+        <item name="android:background">@drawable/button_send_verification_code_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BoxCaptcha" />
+
+    <style name="BoxCaptcha.Item">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:background">@drawable/box_captcha_item_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:width">40dp</item>
+        <item name="android:height">40dp</item>
+    </style>
+
+    <style name="CommonSelect" />
+
+    <style name="CommonSelect.ToolbarButton">
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/common_select_toolbar_selector</item>
+    </style>
+
+    <style name="CommonSelect.RadioBoxButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">#68D778</item>
+        <item name="android:textColorSecondary">#D0D0D0</item>
+    </style>
+
+    <style name="CommonSelect.CheckBoxButton" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorAccent">#68D778</item>
+        <item name="android:textColorSecondary">#D0D0D0</item>
+    </style>
+</resources>

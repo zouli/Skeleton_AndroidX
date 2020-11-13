@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply from: '../libs/util_libs.gradle'
+apply from: '../libs/base_libs.gradle'
+apply from: '../libs/net_libs.gradle'
+apply from: '../libs/widget_libs.gradle'
+
+//配置Android annotations
+def AAVersion = '4.5.2'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.riverside.skeleton.android"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: '../libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha04'
+
+    //配置Android annotations
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
+
+    //get,set工具
+    implementation 'javax.annotation:javax.annotation-api:1.2'
+    implementation 'org.projectlombok:lombok:1.16.10'
+
+    //图片选择控件
+    //https://github.com/martin90s/ImagePicker
+    implementation 'com.github.martin90s:ImagePicker:v1.3.2'
+
+    debugImplementation project(path: ':util')
+    releaseImplementation project(path: ':util')
+    debugImplementation project(path: ':base')
+    releaseImplementation project(path: ':base')
+    debugImplementation project(path: ':net')
+    releaseImplementation project(path: ':net')
+    debugImplementation project(path: ':widget')
+    releaseImplementation project(path: ':widget')
+}

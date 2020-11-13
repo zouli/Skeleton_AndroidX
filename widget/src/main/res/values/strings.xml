@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">widget</string>
+    <string name="button_view_send_verification_code">获取验证码</string>
+    <string name="button_view_send_verification_code2">%1$d 秒</string>
+    <string name="common_select_select_all">全选</string>
+    <string name="common_select_empty_text">没有可以选择的内容</string>
+    <string name="common_select_button_text">完成</string>
+</resources>
